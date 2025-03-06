@@ -126,3 +126,4 @@ st.sidebar.markdown("""
     - Don't use personal information
     - Use different passwords for different accounts
     """)
+st.sidebar.markdown("Connect with me on :🔗 [LinkedIn](https://www.linkedin.com/in/nida-khurram/)")
