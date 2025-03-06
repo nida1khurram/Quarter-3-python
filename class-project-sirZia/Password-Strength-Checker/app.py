@@ -73,7 +73,8 @@ with tab1:
                 label="Save Password in pc",
                 data=password,
                 file_name="generated_password.txt",
-                mime="text/plain"
+                mime="text/plain",
+                 key="download_button_1"  # Unique key for this button
             )
 
 # Password generator tab
@@ -115,7 +116,8 @@ with tab2:
                 label="Save Password in pc",
                 data=password,
                 file_name="generated_password.txt",
-                mime="text/plain"
+                mime="text/plain",
+                 key="download_button_2"  # Unique key for this button
             )
 
 # Sidebar with app information
