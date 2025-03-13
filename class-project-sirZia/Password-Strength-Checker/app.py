@@ -1,7 +1,7 @@
 import streamlit as st
-import re
-import random
-import string
+import re #Pattern Matching: Text mein specific patterns ko dhundhne ke liye
+import random #random number generation aur random selections ke liye use hota ha
+import string #predefined strings aur character sequences ke liye use hota hai
 
 # Set page title
 st.title("🔒 Password Security Tool")
@@ -96,10 +96,10 @@ with tab2:
     if st.button("Generate Password"):
         # Build character pool
         chars = ""
-        if use_upper: chars += string.ascii_uppercase
-        if use_lower: chars += string.ascii_lowercase
-        if use_digits: chars += string.digits
-        if use_special: chars += "!@#$%^&*()_+-=[]{}|;:,.<>?"
+        if use_upper: chars += string.ascii_uppercase # A-Z
+        if use_lower: chars += string.ascii_lowercase # a-z
+        if use_digits: chars += string.digits # 0-9
+        if use_special: chars += "!@#$%^&*()_+-=[]{}|;:,.<>?" # Special characters
         
         if not chars:
             st.error("Select at least one character type")
