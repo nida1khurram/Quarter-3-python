@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "title": "Alice's Adventures in Wonderland",
+        "author": "Lewis Carroll",
+        "year": 1865,
+        "genre": "Fantasy",
+        "read_status": false
+    },
+    {
+        "title": "The Little Prince",
+        "author": "Antoine de Saint-Exup\u00e9ry",
+        "year": 1943,
+        "genre": "Children's Literature",
+        "read_status": false
+    },
+    {
+        "title": "The Secret Garden",
+        "author": "Frances Hodgson Burnett",
+        "year": 1911,
+        "genre": "Children's Literature",
+        "read_status": true
+    }
+]
