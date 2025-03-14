@@ -27,9 +27,6 @@ st.markdown(
     """,
     unsafe_allow_html=True  # Allow HTML rendering
 )
-# Add an image below the title
-st.image("pic.jpg", caption="Your Personal Library", width=300)  # Replace "pic.jpg" with your image path
-
 # Sidebar menu with emojis
 st.sidebar.title(" 👇 Plz Select an option")
 menu = st.sidebar.radio("Your Library", ["📖 View Library", "➕ Add Book", "❌ Remove Book", "🔍 Search Book", "💾 Save & Exit"])
