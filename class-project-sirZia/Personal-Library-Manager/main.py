@@ -1,4 +1,5 @@
 #streamlit app
+# https://knai-library-app.streamlit.app/
 import streamlit as st
 import json  # to save data on local database
 
@@ -82,7 +83,7 @@ elif menu == "🔍 Search Book":
 # Save & exit
 elif menu == "💾 Save & Exit":
     save_library()
-    st.success("💾 Library saved successfully!")
+    st.success("💾 Library saved successfully. Goodbye!")
 
 st.sidebar.subheader("Created by Nida Khurram")
 st.sidebar.markdown("Connect with me on :🔗 [LinkedIn](https://www.linkedin.com/in/nida-khurram/)")
