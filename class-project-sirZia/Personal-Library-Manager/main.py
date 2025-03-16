@@ -1,5 +1,5 @@
 #streamlit app
-# https://knai-library-app.streamlit.app/
+# https://knai-personal-library.streamlit.app/
 import streamlit as st
 import json  # to save data on local database
 
@@ -18,7 +18,7 @@ library = load_library()
 # Save data
 def save_library():
     with open("library.json", "w") as file:
-        json.dump(library, file, indent=4)
+        json.dump(library, file, indent=4)#json.dump() writes the Python object to a file in JSON format.
 
 # Streamlit interface
 st.markdown(
