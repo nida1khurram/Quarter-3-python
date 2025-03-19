@@ -133,8 +133,8 @@ if st.button("Log Mood"):
 data = load_mood_data()
 
 # Debugging: Print file path and current working directory
-st.write(f"Current working directory: {os.getcwd()}")
-st.write(f"File path: {os.path.abspath(MOOD_FILE)}")
+# st.write(f"Current working directory: {os.getcwd()}")
+# st.write(f"File path: {os.path.abspath(MOOD_FILE)}")
 
 # If there is data to display
 if not data.empty:
