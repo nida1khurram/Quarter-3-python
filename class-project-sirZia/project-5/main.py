@@ -56,8 +56,8 @@ def decrypt(encrypted_text, passkey):
         # Handle failed attempts
         st.session_state.failed_attempts += 1
         if st.session_state.failed_attempts >= 3:  # Lock after 3 attempts
-            st.session_state.lockout_time = datetime.now() + timedelta(minutes=5)
-            st.error("🔒 Locked for 5 minutes")
+            st.session_state.lockout_time = datetime.now() + timedelta(seconds=30)
+            st.error("🔒 Locked for 30 seconds")
         return None
 
 # ========== MAIN APP ==========
