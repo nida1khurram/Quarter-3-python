@@ -81,7 +81,7 @@ if st.session_state.needs_login or (st.session_state.failed_attempts >= 3 and
         st.rerun()  # Refresh to show main app
     elif st.button("Login"):
         st.error("❌ Incorrect password!")
-
+    st.write("Master Password For Testing:🔑admin123")
 # ========== AUTHENTICATED INTERFACE ==========
 else:
     # Navigation menu
