@@ -1,2 +1,3 @@
+# pip freeze  # to check all installed pkg
 cryptography
 streamlit

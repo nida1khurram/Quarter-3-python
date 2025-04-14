@@ -121,3 +121,15 @@ else:
     if st.sidebar.button("🚪 Logout"):
         st.session_state.needs_login = True
         st.rerun()
+
+# Add custom CSS to hide the GitHub link
+st.markdown(
+    """
+    <style>
+    #GithubIcon {
+        visibility: hidden;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
