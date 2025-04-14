@@ -1,3 +1,4 @@
+# https://knai-secure-data.streamlit.app/
 # Import required libraries
 import streamlit as st  # Web app framework
 import hashlib  # Password hashing
@@ -7,6 +8,9 @@ import os  # Environment variables
 import base64  # Key encoding
 import json  # Data storage
 from pathlib import Path  # File path handling
+
+# Hide the GitHub icon
+st.set_page_config(menu_items={'About': None})
 
 # ========== CONFIGURATION ==========
 DATA_FILE = "secure_data.json"  # File to store encrypted data
@@ -122,14 +126,4 @@ else:
         st.session_state.needs_login = True
         st.rerun()
 
-# Add custom CSS to hide the GitHub link
-st.markdown(
-    """
-    <style>
-    #GithubIcon {
-        visibility: hidden;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
