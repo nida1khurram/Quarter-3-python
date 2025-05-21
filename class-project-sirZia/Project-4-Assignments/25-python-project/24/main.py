@@ -1,61 +1,14 @@
-# # # pip install discord.py
-# # streamlit run main.py
-# import discord
-# from discord.ext import commands
-# import streamlit as st
-# import asyncio
-# import threading
-# import os
-
-# # Initialize bot
-# intents = discord.Intents.default()
-# intents.message_content = True
-# bot = commands.Bot(command_prefix="!", intents=intents)
-
-# @bot.event
-# async def on_ready():
-#     print(f'Logged in as {bot.user}')
-
-# @bot.command()
-# async def hello(ctx):
-#     await ctx.send("Hello! I am your friendly bot!")
-
-# @bot.command()
-# async def bot_status(ctx):
-#     await ctx.send(f"Bot is online and running as {bot.user}!")
-
-# def run_bot():
-#     token = os.getenv("DISCORD_BOT_TOKEN")  # Get token from environment variable
-#     if not token:
-#         st.error("Error: Bot token not found. Please set the DISCORD_BOT_TOKEN environment variable.")
-#         return
-#     bot.run(token)
-
-# # Streamlit UI
-# st.title("Discord Bot Control Panel")
-
-# if st.button("Start Bot"):
-#     st.write("Starting bot...")
-#     try:
-#         bot_thread = threading.Thread(target=run_bot, daemon=True)
-#         bot_thread.start()
-#         st.success("Bot is now running in the background!")
-#     except Exception as e:
-#         st.error(f"Error starting bot: {e}")
-
-# # Rest of your Streamlit UI...
-
-
-
-# discord
-# https://discord.com/developers/applications/1370753242161483818/information
+# set DISCORD_BOT_TOKEN="9d265ef92c75bd1c554e68bbbf92cfdd317e395c2776afd4531d355967686bc4"
+# pip install python-dotenv
 import discord
 from discord.ext import commands
 import streamlit as st
 import asyncio
 import threading
 import os
+from dotenv import load_dotenv  # Add this line
 
+load_dotenv()  # Add this line to load .env file
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -75,7 +28,7 @@ async def bot_status(ctx):
 
 # Function 
 def run_bot():
-    token = os.getenv("ec5649f18e788a2569d80d262fa84d9c4365fa9cddfce7e1b46f8242c54c9ed5")
+    token = os.getenv("9d265ef92c75bd1c554e68bbbf92cfdd317e395c2776afd4531d355967686bc4")
     if token is None:
         print("Error: Bot token not found. Please set the DISCORD_BOT_TOKEN environment variable.")
     else:
