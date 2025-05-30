@@ -1,10 +1,8 @@
-uv init hello_agent
-cd hello_agent
+uv init project_name
+cd  project_name
 code .
 uv venv
 .venv\Scripts\activate
 add uv dependencies-->  uv add openai-agents python-dotenv
-create .env file
 create .gitignore
-
-uv run main.py
+create .env file
